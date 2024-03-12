@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
+    <link rel="icon" href="assets/img/buffalo.ico" type="image/x-icon">
+    <title>Dashboard Test</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Fonts and icons -->
+	<script src="assets/js/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Open+Sans:300,400,600,700"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ['assets/css/fonts.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+    <aside id="sidebar">
+        <!-- Content for Sidebar -->
+        <div class="h-100">
+            <div class="sidebar-logo">
+                <a href="#"><i class="fas fa-book-reader pe-2"></i>
+                    LU - Digital Library</a>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-header">
+                    Admin Elements
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="fas fa-home pe-2"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed" data-bs-target="#libholds" data-bs-toggle="collapse" aria-expanded="false">
+                        <i class="fas fa-bookmark pe-2"></i>
+                        Library Holdings
+                    </a>
+                    <ul id="libholds" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Published Materials</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Unpublished Materials</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+        <div class="main">
+            <nav class="navbar">
+                <span class="navbar-toggler-icon"></span>
+            </nav>
+        </div>
+    </div>
+       <!-- LESSON 4 -->
+    <div class="container my-5">
+        <h2>Normal Container</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, deleniti! Obcaecati perferendis doloribus, enim modi ipsam, saepe amet exercitationem iure asperiores earum molestias ullam. Blanditiis quibusdam placeat dolor culpa sapiente!</p>
+    </div>
+
+    <div class="container-fluid">
+        <h2>Fluid Container</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta nemo maxime fugiat minus repellendus porro omnis, vel asperiores maiores, saepe consectetur aut hic labore explicabo id velit, ratione nihil obcaecati!</p>
+    </div>
+
+    <div class="container-lg my-5">
+        <h2>100% until lg screens, then container</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic ipsum vero, nisi numquam aspernatur nobis magnam magni molestiae dignissimos quos illo non fuga ad possimus explicabo, odit nam voluptatem voluptatibus minus ullam? Tempore asperiores mollitia atque corrupti architecto, rem aperiam deleniti iusto blanditiis distinctio porro fugit ab vel laborum doloribus, veniam labore praesentium dolore voluptatem repudiandae voluptas! Repellendus saepe incidunt doloribus similique tenetur. Sunt dolores aut et, delectus ipsum itaque provident architecto doloremque ut inventore, quisquam harum voluptas excepturi tempore.</p>
+    </div>
+
+    <div class="container-xl my-5">
+        <h2>100% width until xl screen, then container</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum veniam rem atque minima nam doloribus esse illum? Qui temporibus quo quas tenetur, nihil, necessitatibus dignissimos, beatae soluta excepturi fugit earum!</p>
+    </div>
+
+    <!-- LESSON 3 -->
+    <!--  Margin and Padding -->
+    <div class="bg-primary m-1 p-1">small margin and padding</div>
+    <div class="bg-primary m-5 p-5">large margin and padding</div>
+    <div class="bg-primary my-3 px-5">margin in y direction, padding in x direction</div>
+    <div class="bg-primary mt-3 mb-4 ms-5 me-1 ps-5 pt-4 pe-2 pb-1">m & p for each direction</div>
+
+    <!-- Borders -->
+    <div class="m-3 p-3 border">default border</div>
+    <div class="m-3 p-3 border-top border-end">individual border</div>
+    <div class="m-3 p-3 border-start border-success">border success colour at start</div>
+    <div class="m-3 p-3 border-start border-danger border-5">thicker border</div>
+    <div class="m-3 p-3 rounded border border-5">rounded corners</div>
+    <div class="m-3 p-3 rounded-pill border border-5">rounded pill corners</div>
+
+    <!-- Box Shadow -->
+    <div class="m-3 p-3 shadow-sm">element with small box shadow</div>
+    <div class="m-3 p-3 shadow-lg">element with large box shadow</div>
+    
+    <!-- Font Weight -->
+    <p class="fw-bold">bold text</p>
+    <p class="fw-bolder">bolder text</p>
+    <p>normal text</p>
+    <p class="fw-light">light text</p>
+    <p class="fst-italic">italic text</p>
+    <p class="fst-italic fw-light">italic light text</p>
+
+
+    <!-- LESSON 2 -->
+    <!-- Basic Buttons -->
+    <h2>Buttons</h2>
+
+    <button class="btn btn-primary">PRIMARY</button>
+    <button class="btn btn-secondary">SECONDARY</button>
+
+    <!-- Anchor tags as Buttons-->
+    <h2>Links as Buttons</h2>
+
+    <a href="#" class="btn btn-info">info anchor tag</a>
+    <a href="#" class="btn btn-success">success anchor tag</a>
+
+    <!-- Button Sizes -->
+    <h2>Button sizes</h2>
+
+    <button class="btn btn-lg btn-danger">large danger button</button>
+    <button class="btn btn-sm btn-warning">small warning button</button>
+
+    <!-- Outlined Styles -->
+    <h2>Button Styles</h2>
+
+    <button class="btn btn-outline-primary">outlined primary button</button>
+    <button class="btn btn-outline-secondary btn-lg">large outlined secondary button</button>
+
+    <!-- Button Groups -->
+    <h2>Button Groups</h2>
+
+    <div class="btn-group">
+        <a href="#" class="btn btn-primary">button 1</a>
+        <a href="#" class="btn btn-warning">button 2</a>
+        <a href="#" class="btn btn-success">button 3</a>
+    </div>
+
+    <!-- LESSON 1 -->
+    <!-- Heading Tags -->
+    <h1>Testing</h1>
+    <h2>this is h2</h2>
+    <h3>this is h3</h3>
+    <h2 class="h3">this is an h2 tag with the h3 class</h2>
+
+    <!-- Display Headings -->
+    <h1 class="display-1">display 1 heading</h1>
+    <h1 class="display-2">display 2 heading</h1>
+    <h1 class="display-6">display 6 heading</h1>
+    <p class="display-1">p tag with display-1 class</p>
+    
+
+    <!-- Lead Text & Alignment -->
+    <small>this is small text</small>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p class="lead text-center">hello here</p>
+    <p class="lead text-end">hello here</p>
+    <p class="lead text-start">hello here</p>
+
+
+    <!-- Text Decoration & Font Weight -->
+    <p class="text-decoration-underline">this is underlined text.</p>
+    <p class="text-decoration-line-through">this is line through text.</p>
+    <p class="fw-bold">this is bold text</p>
+    <small>this is small text</small>
+
+    <!-- Text Colours -->
+    <p class="text-primary">theme primary color</p>
+    <p class="text-secondary">theme secondary color</p>
+    <p class="text-info">theme info color</p>
+    <p class="text-warning">theme warning color</p>
+    <p class="text-success">theme warning color</p>
+    <p class="text-danger">theme danger color</p>
+    <p class="text-muted">theme danger color</p>
+
+    <!-- Bg Colors -->
+    <p class="text-white bg-primary">white text on primary</p>
+    <p class="text-white bg-secondary">white text on secondary</p>
+    <p class="text-light bg-danger">white text on danger</p> 
+    
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
