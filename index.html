@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-bs-theme= "light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,16 +12,7 @@
 
     <!-- Fonts and icons -->
 	<script src="assets/js/webfont/webfont.min.js"></script>
-	<script>
-		WebFont.load({
-			google: {"families":["Open+Sans:300,400,600,700"]},
-			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ['assets/css/fonts.css']},
-			active: function() {
-				sessionStorage.fonts = true;
-			}
-		});
-	</script>
-
+	
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -145,6 +137,7 @@
                 </li>
             </ul>
         </div>
+              
     </aside>
         <div class="main">
             <nav class="navbar navbar-expand px-3 border-bottom">
@@ -184,8 +177,8 @@
                                             <p class="mb-0">Laguna University - Digital Library Management System</p>
                                         </div>
                                     </div>
-                                    <div class="col-6 align-self-end text-end">
-                                        <img src="image/pfp.jpg" class="img-fluid illustration-img" alt="">
+                                    <div class="col-6 align-self-center text-end">
+                                        <img src="image/lubuffalo1.png" class="img-fluid illustration-img" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -232,7 +225,6 @@
                                 <th scope="col">#</th>
                                 <th scope="col">Student No.</th>
                                 <th scope="col">Surname</th>
-                                <th scope="col">First Name</th>
                                 <th scope="col">Program</th>
                               </tr>
                             </thead>
@@ -241,21 +233,18 @@
                                 <th scope="row">1</th>
                                 <td>221-5896</td>
                                 <td>Batumbakal</td>
-                                <td>Pedro</td>
                                 <td>BSCS</td>
                               </tr>
                               <tr>
                                 <th scope="row">2</th>
                                 <td>198-1475</td>
                                 <td>Rodriguez</td>
-                                <td>Jollibee</td>
                                 <td>BSTM</td>
                               </tr>
                               <tr>
                                 <th scope="row">3</th>
                                 <td>111-444</td>
                                 <td>Rizal</td>
-                                <td>JP</td>
                                 <td>BAP</td>
                               </tr>
                             </tbody>
@@ -264,6 +253,37 @@
                 </div>
             </div>
         </main>
+
+        <a href="#" class="theme-toggle">
+            <i class="far fa-sun"></i>    
+            <i class="far fa-moon"></i>    
+        </a>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row text-muted">
+                    <div class="col-6 text-start">
+                        <p class="mb-2">
+                            <a href="https://lu.edu.ph" class="text-muted">
+                                <strong>Laguna University 2024</strong>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-6 text-end">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Contact</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Help</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-muted">Placeholder</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         </div>
     </div>
