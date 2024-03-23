@@ -35,6 +35,7 @@ h3 {
 h4 {
     font-family: 'Poppins', 'sans-serif';
     font-size: 1.275rem;
+    margin-bottom: 0px;
     color: var(--bs-emphasis-color);
 }
 
