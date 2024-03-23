@@ -173,7 +173,7 @@
             <main class="content px-3 py-2">
                 <div class="container-fluid">
                     <div class="mb-3">
-                        <h3>Books</h3>
+                        <h3>Published Materials</h3>
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-0 d-flex">
@@ -194,7 +194,8 @@
                                             </form>
                                         </div>
                                         <div class="col-3 align-self-center text-center">
-                                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                                data-bs-target="#myModal">
                                                 <span class="btn-label">
                                                     <i class="fa fa-plus">
                                                     </i>
@@ -208,94 +209,241 @@
                             </div>
                         </div>
 
+                        <!-- MODAL FOR ADD BUTTON -->
                         <div class="modal fade" id="myModal">
                             <div class="modal-dialog modal-dialog-centered">
-                              <div class="modal-content">
-                          
-                                <div class="modal-header">
-                                  <h4 class="modal-title">Add</h4>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-                          
-                                <!-- modal body -->
-                                <div class="modal-body">
-                                    <div class="container overflow-hidden">
-                                        <div class="row gy-2">
+                                <div class="modal-content">
 
-                                    <div class="col-12">
-                                        <label for="category" class="form-label">Category</label>
-                                        <select class="form-select">
-                                            <option selected>Select a category...</option>
-                                            <option value="1">Literature</option>
-                                            <option value="2">Mathematics</option>
-                                            <option value="3">History</option>
-                                          </select>
-                                    
-                                
-                                
-                                
-                                        <div class="col-12">
-                                            <label for="copyrightdate" class="form-label">Copyright Date</label>
-                                            <input type="text" class="form-control" id="copyrightdate" placeholder="e.g. 1978">
-                                        </div>
-                            
-                                        <div class="col-12">
-                                            <label for="booktitle" class="form-label">Book Title</label>
-                                            <input type="text" class="form-control" id="booktitle" placeholder="e.g. No Longer Human">
-                                        </div>
-                            
-                                        <div class="col-12">
-                                            <label for="bookcode" class="form-label">Book Code</label>
-                                            <input type="text" class="form-control" id="bookcode" placeholder="e.g. EB0001">
-                                        </div>
-                            
-                                        <div class="col-12">
-                                            <label for="author" class="form-label">Author</label>
-                                            <input type="text" class="form-control" id="author" placeholder="e.g. Osamu, Dazai">
-                                        </div>
-                            
-                                        <div class="col-12">
-                                            <label for="ppublication" class="form-label">Place of Publication</label>
-                                            <input type="text" class="form-control" id="ppublication" placeholder="e.g. Norfolk, Connecticut">
-                                        </div>
-                            
-                                        <div class="col-12">
-                                            <label for="publisher" class="form-label">Publisher</label>
-                                            <input type="text" class="form-control" id="publisher" placeholder="e.g. New Directions">
-                                        </div>
-                            
-                                        <div class="col-12">
-                                            <label for="description" class="form-label">Description</label>
-                                            <input type="text" class="form-control" id="description" placeholder="Tell something about it...">
-                                        </div>
-                            
-                                        <div class="col-12">
-                                            <label for="isbnumber" class="form-label">ISBN</label>
-                                            <input type="text" class="form-control" id="isbnumber" placeholder="e.g. 9780811204811">
-                                        </div>
-                            
-                                        <label for="col-12" class="label">Link</label>
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text"><i class="fas fa-paperclip"></i></span>
-                                            <input type="text" class="form-control" id="url" placeholder="e.g. https://example.com">
-                                        </div>
-                                  
-                                        
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Add</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                     </div>
+
+                                    <!-- modal body -->
+                                    <div class="modal-body">
+                                        <div class="container overflow-hidden">
+                                            <div class="row gy-2">
+
+                                                <div class="col-12">
+                                                    <label for="category" class="form-label">Category</label>
+                                                    <select class="form-select">
+                                                        <option selected>Select a category...</option>
+                                                        <option value="1">Literature</option>
+                                                        <option value="2">Mathematics</option>
+                                                        <option value="3">History</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="copyrightdate" class="form-label">Copyright Date</label>
+                                                    <input type="text" class="form-control" id="copyrightdate"
+                                                        placeholder="e.g. 1978">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="booktitle" class="form-label">Book Title</label>
+                                                    <input type="text" class="form-control" id="booktitle"
+                                                        placeholder="e.g. No Longer Human">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="bookcode" class="form-label">Book Code</label>
+                                                    <input type="text" class="form-control" id="bookcode"
+                                                        placeholder="e.g. EB0001">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="author" class="form-label">Author</label>
+                                                    <input type="text" class="form-control" id="author"
+                                                        placeholder="e.g. Osamu, Dazai">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="ppublication" class="form-label">Place of
+                                                        Publication</label>
+                                                    <input type="text" class="form-control" id="ppublication"
+                                                        placeholder="e.g. Norfolk, Connecticut">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="publisher" class="form-label">Publisher</label>
+                                                    <input type="text" class="form-control" id="publisher"
+                                                        placeholder="e.g. New Directions">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="description" class="form-label">Description</label>
+                                                    <input type="text" class="form-control" id="description"
+                                                        placeholder="Tell something about it...">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="isbnumber" class="form-label">ISBN</label>
+                                                    <input type="text" class="form-control" id="isbnumber"
+                                                        placeholder="e.g. 9780811204811">
+                                                </div>
+
+                                                <label for="col-12" class="label">Link</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text"><i
+                                                            class="fas fa-paperclip"></i></span>
+                                                    <input type="text" class="form-control" id="url"
+                                                        placeholder="e.g. https://example.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-success"
+                                            data-bs-dismiss="modal">Submit</button>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Submit</button>
-                          </div>
-                                
+
+                        <!-- MODAL FOR DELETE BUTTON -->
+                        <div class="modal fade" id="myModal2">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Delete</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        Are you sure you want to delete this item?
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Delete</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MODAL FOR EDIT BUTTON -->
+                        <div class="modal fade" id="myModal3">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Edit</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- modal body -->
+                                    <div class="modal-body">
+                                        <div class="container overflow-hidden">
+                                            <div class="row gy-2">
+
+                                                <div class="col-12">
+                                                    <label for="category" class="form-label">Category</label>
+                                                    <select class="form-select">
+                                                        <option selected>Select a category...</option>
+                                                        <option value="1">Literature</option>
+                                                        <option value="2">Mathematics</option>
+                                                        <option value="3">History</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="copyrightdate" class="form-label">Copyright Date</label>
+                                                    <input type="text" class="form-control" id="copyrightdate"
+                                                        placeholder="e.g. 1978">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="booktitle" class="form-label">Book Title</label>
+                                                    <input type="text" class="form-control" id="booktitle"
+                                                        placeholder="e.g. No Longer Human">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="bookcode" class="form-label">Book Code</label>
+                                                    <input type="text" class="form-control" id="bookcode"
+                                                        placeholder="e.g. EB0001">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="author" class="form-label">Author</label>
+                                                    <input type="text" class="form-control" id="author"
+                                                        placeholder="e.g. Osamu, Dazai">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="ppublication" class="form-label">Place of
+                                                        Publication</label>
+                                                    <input type="text" class="form-control" id="ppublication"
+                                                        placeholder="e.g. Norfolk, Connecticut">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="publisher" class="form-label">Publisher</label>
+                                                    <input type="text" class="form-control" id="publisher"
+                                                        placeholder="e.g. New Directions">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="description" class="form-label">Description</label>
+                                                    <input type="text" class="form-control" id="description"
+                                                        placeholder="Tell something about it...">
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <label for="isbnumber" class="form-label">ISBN</label>
+                                                    <input type="text" class="form-control" id="isbnumber"
+                                                        placeholder="e.g. 9780811204811">
+                                                </div>
+
+                                                <label for="col-12" class="label">Link</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text"><i
+                                                            class="fas fa-paperclip"></i></span>
+                                                    <input type="text" class="form-control" id="url"
+                                                        placeholder="e.g. https://example.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-success"
+                                            data-bs-dismiss="modal">Submit</button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MODAL FOR VIEW BUTTON -->
+                        <div class="modal fade" id="myModal4">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                          
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">View</h4>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                          
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <img src="image/nlh.jpg" class="img-fluid" alt="nlh">
+                                    <img src="image/p1.png" class="img-fluid" alt="p1">
+                                </div>
                           
                               </div>
                             </div>
                           </div> 
-                    
 
-                                                  
                         <div class="col-12 col-md-0 d-flex">
                             <div class="card flex-fill border-0">
                                 <div class="card-body py-4">
@@ -304,61 +452,64 @@
                                             <div class="table-responsive-lg">
                                                 <table class="table table-hover rounded-3">
                                                     <thead>
-                                                    <tr>
-                                                        <th scope="col">Accession No.</th>
-                                                        <th scope="col">Book Code</th>
-                                                        <th scope="col">Author</th>
-                                                        <th scope="col">Title</th>
-                                                        <th scope="col">Copyright Date</th>
-                                                        <th scope="col">Cover</th>
-                                                        <th scope="col">Action</th>
-                                                    </tr>
+                                                        <tr>
+                                                            <th scope="col">Accession No.</th>
+                                                            <th scope="col">Book Code</th>
+                                                            <th scope="col">Author</th>
+                                                            <th scope="col">Title</th>
+                                                            <th scope="col">Copyright Date</th>
+                                                            <th scope="col">Cover</th>
+                                                            <th scope="col">Action</th>
+                                                        </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr>
-                                                        <th scope="row">00001</td>
-                                                        <td>B0001</td>
-                                                        <td>Osamu, Dazai</td>
-                                                        <td>No Longer Human</td>
-                                                        <td>1941</td>
-                                                        <td> <button class="btn btn-success">
-                                                            <span class="btn-label">
-                                                                <i class="fas fa-file-upload"></i>
-                                                            </span>
-                                                            Upload
-                                                        </button>
-                                                    </td>
-                                                        <td>
-                                                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal4">
-                                                                <span class="btn-label">
-                                                                    <i class="far fa-eye"></i>
-                                                                </span>
-                                                                View
-                                                            </button>
-                                                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal3">
-                                                                <span class="btn-label">
-                                                                    <i class="fas fa-pen"></i>
-                                                                </span>
-                                                                Edit
-                                                            </button>
-                                                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal2">
-                                                                <span class="btn-label">
-                                                                    <i class="far fa-trash-alt"></i>
-                                                                </span>
-                                                                Delete
-                                                            </button>  
-                                                        </td>
-                                                    </tr>
+                                                        <tr>
+                                                            <th scope="row">00001</td>
+                                                            <td>B0001</td>
+                                                            <td>Osamu, Dazai</td>
+                                                            <td>No Longer Human</td>
+                                                            <td>1941</td>
+                                                            <td> <button class="btn btn-success">
+                                                                    <span class="btn-label">
+                                                                        <i class="fas fa-file-upload"></i>
+                                                                    </span>
+                                                                    Upload
+                                                                </button>
+                                                            </td>
+                                                            <td>
+                                                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                                                    data-bs-target="#myModal4">
+                                                                    <span class="btn-label">
+                                                                        <i class="far fa-eye"></i>
+                                                                    </span>
+                                                                    View
+                                                                </button>
+                                                                <button class="btn btn-warning" data-bs-toggle="modal"
+                                                                    data-bs-target="#myModal3">
+                                                                    <span class="btn-label">
+                                                                        <i class="fas fa-pen"></i>
+                                                                    </span>
+                                                                    Edit
+                                                                </button>
+                                                                <button class="btn btn-danger" data-bs-toggle="modal"
+                                                                    data-bs-target="#myModal2">
+                                                                    <span class="btn-label">
+                                                                        <i class="far fa-trash-alt"></i>
+                                                                    </span>
+                                                                    Delete
+                                                                </button>
+                                                            </td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                   
+
             </main>
 
             <a href="#" class="theme-toggle">
@@ -385,7 +536,8 @@
                                     <a href="#" class="text-muted">Help</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="https://elibrary.lu.edu.ph" class="text-success"><strong>Digital Library</strong></a>
+                                    <a href="https://elibrary.lu.edu.ph" class="text-success"><strong>Digital
+                                            Library</strong></a>
                                 </li>
                             </ul>
                         </div>
