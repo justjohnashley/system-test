@@ -46,10 +46,16 @@ h4 {
 }
 
 #sidebar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    overflow: auto;
+    height: 100vh;
     max-width: 300px;
     min-width: 300px;
     background: var(--bs-success);
     transition: all 0.35s ease-in-out;
+    float: left;
 }
 
 .main {
@@ -95,6 +101,7 @@ a.sidebar-link {
     position: relative;
     display: block;
     font-size: 0.875rem;
+    border-left: 3px solid transparent;
 }
 
 .sidebar-link[data-bs-toggle="collapse"]::after {
@@ -113,6 +120,15 @@ a.sidebar-link {
 .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
     transform: rotate(45deg);
     transition: all .2s ease-out;
+}
+
+.sidebar-link i {
+    margin-right: .5rem;
+}
+
+.sidebar-link:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    border-left: 3px solid #fff;
 }
 
 .avatar {
@@ -227,4 +243,18 @@ html[data-bs-theme="light"] .theme-toggle .fa-sun{
     .right-box{
         padding: 20px;
     }
+}
+
+/* modal for libholds */
+
+.modal-header{
+    background-color: var(--bs-secondary-bg);
+}
+
+.modal-footer{
+    background-color: var(--bs-tertiary-bg);
+}
+
+a.card-click{
+    color: var(--bs-emphasis-color);
 }

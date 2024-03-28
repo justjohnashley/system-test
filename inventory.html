@@ -13,7 +13,7 @@
 
     <!-- Fonts and icons -->
     <script src="assets/js/webfont/webfont.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,7 +25,7 @@
             <div class="h-100">
                 <div class="sidebar-logo">
                     <a href="#"><i class="fas fa-book-reader pe-2"></i>
-                        LU - Digital Library</a>
+                        LU - Digital Library</a>                    
                 </div>
                 <ul class="sidebar-nav">
                     <li class="sidebar-header">
@@ -33,7 +33,7 @@
                         Logged in as Library Director
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
+                        <a href="index.html" class="sidebar-link">
                             <i class="fas fa-home pe-2"></i>
                             Dashboard
                         </a>
@@ -124,7 +124,7 @@
                         </a>
                         <ul id="automation" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a href="inventory.html" class="sidebar-link">Inventory</a>
+                                <a href="#" class="sidebar-link">Inventory</a>
                             </li>
                             <li class="sidebar-item">
                                 <a href="#" class="sidebar-link" data-bs-target="#logb" data-bs-toggle="collapse"
@@ -171,93 +171,117 @@
             <main class="content px-3 py-2">
                 <div class="container-fluid">
                     <div class="mb-3">
-                        <h3>Admin Dashboard</h3>
+                        <h3>Inventory</h3>
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-6 d-flex">
                             <div class="card flex-fill border-0 illustration">
+                                <a href="#" class="card-click">
                                 <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Welcome back, Library Director!</h4>
-                                                <p class="mb-0">Laguna University - Digital Library Management System
-                                                </p>
+                                    <div class="row gx-3 w-100">
+                                        <div class="col-12">
+                                            <div class="p-3 m-1 ms-3">
+                                                <h4 class="mb-2">Published Materials</h4>
+                                                <h1 class="text-end display-3 mb-0">
+                                                    <i class="fas fa-book"></i>
+                                                </h1>
                                             </div>
-                                        </div>
-                                        <div class="col-6 align-self-center text-center">
-                                            <img src="image/lubuffalo1.png" class="img-fluid illustration-img" alt="">
                                         </div>
                                     </div>
                                 </div>
+                                </a>
                             </div>
+
                         </div>
                         <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h4 class="mb-2">Borrow Requests</h4>
-                                            <p class="text-warning m-2">5 pending request/s</p>
-                                            <div class="mb-0">
-                                                <span class="text-success ms-3 me-2">
-                                                    +9 request/s approved today
-                                                </span>
+                            <div class="card flex-fill border-0 illustration">
+                                <a href="#" class="card-click">
+                                <div class="card-body p-0 d-flex flex-fill">
+                                    <div class="row gx-3 w-100">
+                                        <div class="col-12">
+                                            <div class="p-3 m-1 ms-3">
+                                                <h4 class="mb-2">Unpublished Materials</h4>
+                                                <h1 class="text-end display-3 mb-0">
+                                                    <i class="fas fa-book"></i>
+                                                </h1>
                                             </div>
-                                            <div class="mb-0">
-                                                <span class="text-danger ms-3 me-2">
-                                                    -2 request/s denied today
-                                                </span>
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="card flex-fill border-0 illustration">
+                                <a href="#" class="card-click">
+                                <div class="card-body p-0 d-flex flex-fill">
+                                    <div class="row gx-3 w-100">
+                                        <div class="col-12">
+                                            <div class="p-3 m-1 ms-3">
+                                                <h4 class="mb-2">Logbook Records</h4>
+                                                <h1 class="text-end display-3 mb-0">
+                                                    <i class="fas fa-book"></i>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="card flex-fill border-0 illustration">
+                                <a href="#" class="card-click">
+                                <div class="card-body p-0 d-flex flex-fill">
+                                    <div class="row gx-3 w-100">
+                                        <div class="col-12">
+                                            <div class="p-3 m-1 ms-3">
+                                                <h4 class="mb-2">Placeholder</h4>
+                                                <h1 class="text-end display-3 mb-0">
+                                                    <i class="fas fa-book"></i>
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
                             </div>
                         </div>
+                        
                     </div>
-                    <!-- Table Elements -->
-                    <div class="card border-0">
-                        <div class="card-header">
-                            <h5 class="card-title mt-2">
-                                Logbook Records
-                            </h5>
-                            <h6 class="card-subtitle text-muted">
-                                Real-time view of digital records of the Library Logbook
-                            </h6>
+                    <!-- Chart Elements -->
+                    <div class="row my-2">
+                        <div class="col-md-12 py-1">
+                            <div class="card border-0">
+                                <div class="card-header">
+                                    <h5 class="card-title mt-2">
+                                        Books borrowed this year
+                                    </h5>
+                                    <h6 class="card-subtitle text-muted">
+                                        Monthly view of books borrowed. 
+                                    </h6>
+                                </div>   
+                                <div class="card-body d-flex flex-fill">
+                                    <canvas id="chLine"></canvas>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <div class="table-responsive-lg">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Student No.</th>
-                                            <th scope="col">Surname</th>
-                                            <th scope="col">Program</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>221-5896</td>
-                                            <td>Batumbakal</td>
-                                            <td>BSCS</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>198-1475</td>
-                                            <td>Rodriguez</td>
-                                            <td>BSTM</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>111-444</td>
-                                            <td>Rizal</td>
-                                            <td>BAP</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="col-md-12 py-1">
+                            <div class="card border-0">
+                                <div class="card-header">
+                                    <h5 class="card-title mt-2">
+                                        Student Logs
+                                    </h5>
+                                    <h6 class="card-subtitle text-muted">
+                                        Monthly view of student who logged into the University Library. 
+                                    </h6>
+                                </div>   
+                                <div class="card-body d-flex flex-fill">
+                                    <canvas id="chBar"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -306,7 +330,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
+    
     <script src="script.js"></script>
 </body>
 
