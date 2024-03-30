@@ -130,6 +130,11 @@ a.sidebar-link {
     background-color: rgba(0, 0, 0, 0.075);
     border-left: 3px solid #fff;
 }
+/*
+.sidebar-link:active {
+    background-color: rgba(255, 255, 255, 0.727);
+    border-left: 3px solid #fff;
+} */
 
 .avatar {
     height: 40px;
@@ -269,15 +274,19 @@ a.card-click {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #5d5d5d;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #b2b2b2;
-    border-radius: 10px;
+    border-radius: calc(15px/2);
 
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #47b581;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #358861;
 }
