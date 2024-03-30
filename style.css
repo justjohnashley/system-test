@@ -186,7 +186,7 @@ a.sidebar-link {
 
 /* Theme Toggle */
 
-.theme-toggle{
+.theme-toggle {
     position: fixed;
     top: 85%;
     transform: translateY(-65%);
@@ -199,7 +199,7 @@ a.sidebar-link {
 }
 
 html[data-bs-theme="dark"] .theme-toggle .fa-sun,
-html[data-bs-theme="light"] .theme-toggle .fa-moon{
+html[data-bs-theme="light"] .theme-toggle .fa-moon {
     cursor: pointer;
     padding: 10px;
     display: block;
@@ -207,54 +207,77 @@ html[data-bs-theme="light"] .theme-toggle .fa-moon{
     color: #fff;
 }
 
-html[data-bs-theme="dark"] .theme-toggle .fa-moon{
+html[data-bs-theme="dark"] .theme-toggle .fa-moon {
     display: none;
 }
 
-html[data-bs-theme="light"] .theme-toggle .fa-sun{
+html[data-bs-theme="light"] .theme-toggle .fa-sun {
     display: none;
 }
 
 /* Login */
 
-.box-area{
+.box-area {
     width: 930px;
 }
 
-.right-box{
+.right-box {
     padding: 40px 30px 40px 40px;
 }
 
-::placeholder{
+::placeholder {
     font-size: 16px;
 }
 
 @media only screen and (max-width: 768px) {
-    
-    .box-area{
+
+    .box-area {
         margin: 0 10px;
 
     }
-    .left-box{
+
+    .left-box {
         height: 100px;
         overflow: hidden;
 
     }
-    .right-box{
+
+    .right-box {
         padding: 20px;
     }
 }
 
 /* modal for libholds */
 
-.modal-header{
+.modal-header {
     background-color: var(--bs-secondary-bg);
 }
 
-.modal-footer{
+.modal-footer {
     background-color: var(--bs-tertiary-bg);
 }
 
-a.card-click{
+a.card-click {
     color: var(--bs-emphasis-color);
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b2b2b2;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #47b581;
 }
