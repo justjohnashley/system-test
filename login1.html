@@ -45,24 +45,26 @@
                         <hr class="my-1">
                         <p>This is the Library Management System of Laguna University.</p>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Username">
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
-                    </div>
-                    <div class="input-group mb-5 d-flex justify-content-between">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="formCheck">
-                            <label for="formCheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
+                    <form class="row">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Username" required>
                         </div>
-                        <div class="forgot">
-                            <small><a href="#">Forgot password?</a></small>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" required>
                         </div>
-                    </div>
-                    <div class="input-group mb-3">
-                        <a class="btn btn-lg btn-primary w-100 fs-6" href="index.html" role="button">Login</a>
-                    </div>
+                        <div class="input-group mb-5 d-flex justify-content-between">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="formCheck">
+                                <label for="formCheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
+                            </div>
+                            <div class="forgot">
+                                <small><a href="#">Forgot password?</a></small>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-lg btn-primary w-100 fs-6" type="submit">Login</a>
+                        </div>
+                    </form>
                     <div class="row">
                         <small>Laguna University 2024 | <a href="https://elibrary.lu.edu.ph">Digital Library</a></small>
                     </div>

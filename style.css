@@ -290,3 +290,48 @@ a.card-click {
 ::-webkit-scrollbar-thumb:active {
     background: #358861;
 }
+
+/* circulation */
+.btn {
+    margin: 3px 0;
+}
+
+.offcanvas-header {
+    font-size: large;
+}
+
+.offcanvas-body {
+    margin-top: 50%;
+}
+
+.img-thumbnail {
+    width: 40%;
+    height: auto;
+    margin: 3% 0 0 30%;
+}
+
+.status {
+    text-align: center;
+    margin: 10% auto 0;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 1%;
+    font-style: italic;
+}
+
+.information {
+    text-align: center;
+    margin-top: 5%;
+    font-size: medium;
+    font-weight: bold;
+}
+
+
+.sub {
+    font-size: small;
+    font-weight: normal;
+    margin-top: -5%;
+    text-align: center;
+}

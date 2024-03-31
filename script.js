@@ -41,3 +41,51 @@ if (isLight()){
     toggleRootClass();
 }
 
+/* circulation */
+document.addEventListener("DOMContentLoaded", function() {
+    var offcanvasElement = document.getElementById('librecs');
+    var offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+    
+    var searchForm = document.getElementById('searchForm');
+    
+    offcanvasElement.addEventListener('show.bs.offcanvas', function () {
+        var mainContent = document.querySelector('.main');
+        mainContent.style.marginRight = '400px';
+    });
+    
+    offcanvasElement.addEventListener('hidden.bs.offcanvas', function () {
+        var mainContent = document.querySelector('.main');
+        mainContent.style.marginRight = '0';
+    });
+    
+    searchForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        var searchInput = searchForm.querySelector('input[type="search"]');
+        var searchQuery = searchInput.value.trim();
+        
+        if (searchQuery) {
+            var redirectUrl = 'circulation2.html?searchQuery=' + encodeURIComponent(searchQuery);
+            window.location.href = redirectUrl;
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var params = new URLSearchParams(window.location.search);
+    var searchQuery = params.get('searchQuery'); 
+
+    if (searchQuery) {
+        var myOffcanvasElement = document.getElementById('librecs');
+        if (myOffcanvasElement) {
+            var myOffcanvas = new bootstrap.Offcanvas(myOffcanvasElement);
+            myOffcanvas.show(); 
+
+            var searchDisplayElement = document.querySelector('#librecs .card-body');
+            if (searchDisplayElement) {
+                searchDisplayElement.innerHTML += '<p>Search query: ' + decodeURIComponent(searchQuery) + '</p>';
+            }
+        }
+    }
+});
