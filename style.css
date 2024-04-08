@@ -352,6 +352,16 @@ a.card-click {
     0 0 25px blue;
 }
 
+.btn-glow-personnel{
+    box-shadow: 0 0 5px red,
+    0 0 25px red;
+}
+
+.btn-glow-visitor{
+    box-shadow: 0 0 5px purple,
+    0 0 25px purple;
+}
+
 .btn-glow-student:hover{
     box-shadow: 0 0 5px var(--bs-emphasis-color),
     0 0 25px var(--bs-emphasis-color), 0 0 50px green,
@@ -362,4 +372,16 @@ a.card-click {
     box-shadow: 0 0 5px white,
     0 0 25px white, 0 0 50px blue,
     0 0 75px blue, 0 0 100px blue;
+}
+
+.btn-glow-personnel:hover{
+    box-shadow: 0 0 5px white,
+    0 0 25px white, 0 0 50px red,
+    0 0 75px red, 0 0 100px red;
+}
+
+.btn-glow-visitor:hover{
+    box-shadow: 0 0 5px var(--bs-emphasis-color),
+    0 0 25px var(--bs-emphasis-color), 0 0 50px purple,
+    0 0 75px purple, 0 0 100px purple;
 }
