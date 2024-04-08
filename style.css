@@ -335,3 +335,31 @@ a.card-click {
     margin-top: -5%;
     text-align: center;
 }
+ /* logbook button fx */
+.btn-size{
+    width: 30vw;
+    height: 28vh;
+    margin: 10px;
+}
+
+.btn-glow-student{
+    box-shadow: 0 0 5px green,
+    0 0 25px green;
+}
+
+.btn-glow-shs{
+    box-shadow: 0 0 5px blue,
+    0 0 25px blue;
+}
+
+.btn-glow-student:hover{
+    box-shadow: 0 0 5px var(--bs-emphasis-color),
+    0 0 25px var(--bs-emphasis-color), 0 0 50px green,
+    0 0 75px green, 0 0 100px green;
+}
+
+.btn-glow-shs:hover{
+    box-shadow: 0 0 5px white,
+    0 0 25px white, 0 0 50px blue,
+    0 0 75px blue, 0 0 100px blue;
+}
