@@ -363,24 +363,28 @@ a.card-click {
 }
 
 .btn-glow-student:hover{
+    background-color: green;
     box-shadow: 0 0 5px var(--bs-emphasis-color),
     0 0 25px var(--bs-emphasis-color), 0 0 50px green,
     0 0 75px green, 0 0 100px green;
 }
 
 .btn-glow-shs:hover{
-    box-shadow: 0 0 5px white,
-    0 0 25px white, 0 0 50px blue,
+    background-color: blue;
+    box-shadow: 0 0 5px var(--bs-emphasis-color),
+    0 0 25px var(--bs-emphasis-color), 0 0 50px blue,
     0 0 75px blue, 0 0 100px blue;
 }
 
 .btn-glow-personnel:hover{
-    box-shadow: 0 0 5px white,
-    0 0 25px white, 0 0 50px red,
+    background-color: red;
+    box-shadow: 0 0 5px var(--bs-emphasis-color),
+    0 0 25px var(--bs-emphasis-color), 0 0 50px red,
     0 0 75px red, 0 0 100px red;
 }
 
 .btn-glow-visitor:hover{
+    background-color: purple;
     box-shadow: 0 0 5px var(--bs-emphasis-color),
     0 0 25px var(--bs-emphasis-color), 0 0 50px purple,
     0 0 75px purple, 0 0 100px purple;
